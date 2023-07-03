@@ -1,4 +1,3 @@
-import logo from './images/logo.svg';
 import './styles/App.css';
 import MainDialog from './components/BotDisplay';
 
