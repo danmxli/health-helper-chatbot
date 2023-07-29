@@ -1,6 +1,6 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import DisplayUsers from '../components/widgets/DisplayUsers';
-import SearchDefinition from '../components/widgets/SearchDefinition';
+import DisplayAboutMe from '../components/widgets/AboutMe';
 import MyAvatar from '../profiles/MyAvatar';
 
 const config = {
@@ -27,9 +27,9 @@ const config = {
             mapStateToProps: ["displayUsers"]
         }, 
         {
-            widgetName: "searchDefinition",
-            widgetFunc: (props) => <SearchDefinition {...props}/>
-            // mapStateToProps: ["searchDefinition"]
+            widgetName: "aboutMe",
+            widgetFunc: (props) => <DisplayAboutMe {...props}/>,
+            mapStateToProps: ["aboutMe"]
         }
     ]
 };

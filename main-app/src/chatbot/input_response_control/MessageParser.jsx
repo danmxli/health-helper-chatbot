@@ -22,6 +22,10 @@ class MessageParser {
     if (lowercase.includes("about")) {
       this.actionProvider.displayAboutMe()
     }
+
+    if (lowercase.includes("define")) {
+      this.actionProvider.displaySearchDefinition(message)  
+    }
   }
 }
 
