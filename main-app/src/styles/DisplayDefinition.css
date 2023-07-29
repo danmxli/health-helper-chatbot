@@ -1,8 +1,4 @@
-.display-users-widget {
-    color: black;
-}
-
-.widget-list-item {
+.definition-box-item {
     display: flex;
     font-size: 11px;
     margin: 1px;

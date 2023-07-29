@@ -20,6 +20,12 @@ class ActionProvider {
   setChatBotMessage = (message) => {
     this.setStateFunc(state => ({ ...state, messages: [...state.messages, message] }))
   }
+
+  displayAboutMe = () => {
+    console.log("test");
+    const message = this.createChatBotMessage("Glad you asked! I am a website chatbot designed to help you familiarize yourself with insurance terms.");
+    this.setChatBotMessage(message)
+  }
 }
 
 export default ActionProvider;

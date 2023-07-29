@@ -1,5 +1,5 @@
 import React, { useEffect, setState } from 'react';
-import '../styles/DisplayUsers.css';
+import '../../styles/DisplayUsers.css'
 
 const DisplayUsers = (props) => {
     const { setState } = props;
@@ -8,7 +8,6 @@ const DisplayUsers = (props) => {
         // fetch 
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(data => data.json())
-            // .then(json => console.log(json))
             .then(data => {
                 if (data) {
                     const dataArray = Object.values(data)
@@ -32,7 +31,7 @@ const DisplayUsers = (props) => {
 
     }
 
-    return <div className="todos-widget">
+    return <div className="display-users-widget">
         <ul>
             {renderDisplayUsers()}
         </ul>

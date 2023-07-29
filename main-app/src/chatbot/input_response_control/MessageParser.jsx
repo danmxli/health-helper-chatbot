@@ -18,6 +18,10 @@ class MessageParser {
     if (lowercase.includes("user")) {
       this.actionProvider.displayExistingUsers()
     }
+
+    if (lowercase.includes("about")) {
+      this.actionProvider.displayAboutMe()
+    }
   }
 }
 
