@@ -1,0 +1,40 @@
+{
+    "name": "Corpus",
+    "locale": "en-US",
+    "data": [
+        {
+            "intent": "greetings.hello",
+            "utterances": [
+                "hello",
+                "hi",
+                "hey",
+                "howdy",
+                "greetings"
+            ],
+            "answers": [
+                "Hello! How can I assist you?",
+                "Hi there! What can I do for you?",
+                "Hey! How may I help you today?",
+                "Howdy! What brings you here?",
+                "Greetings! What can I do for you?"
+            ]
+        },
+        {
+            "intent": "greetings.goodbye",
+            "utterances": [
+                "goodbye",
+                "bye",
+                "see you",
+                "see you later",
+                "farewell"
+            ],
+            "answers": [
+                "Goodbye! Have a great day!",
+                "Bye! Take care!",
+                "See you later! Until next time.",
+                "Farewell! See you soon!",
+                "Take care! Goodbye!"
+            ]
+        }
+    ]
+}
