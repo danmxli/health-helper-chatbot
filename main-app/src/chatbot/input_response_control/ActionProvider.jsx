@@ -1,5 +1,3 @@
-import React from 'react';
-import fetchDefinition from '../language_models/DefinitionGenerator';
 
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc) {
@@ -22,15 +20,10 @@ class ActionProvider {
     this.setChatBotMessage(message)
   }
 
-  displaySearchDefinition = (userInput) => {
-    const message = this.createChatBotMessage(fetchDefinition(userInput));
-    this.setChatBotMessage(message)
-  }
-
   // method to add chatbot message to the state
   setChatBotMessage = (message) => {
     this.setStateFunc(state => ({ ...state, messages: [...state.messages, message] }))
-  }  
+  }
 }
 
 export default ActionProvider;

@@ -1,4 +1,3 @@
-import React from 'react';
 
 class MessageParser {
   constructor(actionProvider, state) {
@@ -21,10 +20,6 @@ class MessageParser {
 
     if (lowercase.includes("about")) {
       this.actionProvider.displayAboutMe()
-    }
-
-    if (lowercase.includes("define")) {
-      this.actionProvider.displaySearchDefinition(message)  
     }
   }
 }

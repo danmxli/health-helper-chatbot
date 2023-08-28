@@ -5,7 +5,7 @@ import MyAvatar from '../profiles/MyAvatar';
 
 const config = {
     initialMessages: [createChatBotMessage(`Hello! How may I be of assistance today?`)],
-    botName: 'Insurance Helper Chatbot',
+    botName: 'Health Helper Chatbot',
     customComponents: {
         botAvatar: (props) => <MyAvatar {...props} />
     },
