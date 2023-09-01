@@ -1,5 +1,5 @@
 .config-box-item {
-    display: inline-block;
+    display: flex;
     color: black;
     font-size: 12px;
     margin: 1px;
@@ -8,4 +8,19 @@
     border-radius: 15px;
     background-color: #e6f5ea;
     text-align: left;
+}
+
+.config-box-item ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.config-box-item li {
+    text-align: left;
+    margin: 1px;
+    padding: 7px;
+    border: 3px solid #375a44;
+    background-color: #1a3221;
+    color: #79ef99;
+    border-radius: 15px;
 }
