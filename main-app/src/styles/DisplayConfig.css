@@ -1,0 +1,11 @@
+.config-box-item {
+    display: inline-block;
+    color: black;
+    font-size: 12px;
+    margin: 1px;
+    padding: 5px;
+    border: 3px solid #375a44;
+    border-radius: 15px;
+    background-color: #e6f5ea;
+    text-align: left;
+}

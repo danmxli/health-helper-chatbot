@@ -20,6 +20,11 @@ class ActionProvider {
     this.setChatBotMessage(message)
   }
 
+  displayConfigData = () => {
+    const message = this.createChatBotMessage("User configuration settings: ", { widget: 'displayConfig' });
+    this.setChatBotMessage(message);
+  }
+
   // method to add chatbot message to the state
   setChatBotMessage = (message) => {
     this.setStateFunc(state => ({ ...state, messages: [...state.messages, message] }))

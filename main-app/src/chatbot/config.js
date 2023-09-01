@@ -1,6 +1,7 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import DisplayUsers from '../components/widgets/DisplayUsers';
 import DisplayAboutMe from '../components/widgets/AboutMe';
+import DisplayConfig from '../components/widgets/DisplayConfig';
 import MyAvatar from '../profiles/MyAvatar';
 
 const config = {
@@ -25,11 +26,16 @@ const config = {
             widgetName: "displayUsers",
             widgetFunc: (props) => <DisplayUsers {...props} />,
             mapStateToProps: ["displayUsers"]
-        }, 
+        },
         {
             widgetName: "aboutMe",
-            widgetFunc: (props) => <DisplayAboutMe {...props}/>,
+            widgetFunc: (props) => <DisplayAboutMe {...props} />,
             mapStateToProps: ["aboutMe"]
+        },
+        {
+            widgetName: "displayConfig",
+            widgetFunc: (props) => <DisplayConfig {...props} />,
+            mapStateToProps: ["displayConfig"]
         }
     ]
 };

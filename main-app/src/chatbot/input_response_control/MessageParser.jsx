@@ -1,3 +1,4 @@
+import handleConfig from "../../functions/HandleConfig";
 
 class MessageParser {
   constructor(actionProvider, state) {
@@ -20,6 +21,10 @@ class MessageParser {
 
     if (lowercase.includes("about")) {
       this.actionProvider.displayAboutMe()
+    }
+
+    if (lowercase.includes("config")) {
+      this.actionProvider.displayConfigData()
     }
   }
 }
