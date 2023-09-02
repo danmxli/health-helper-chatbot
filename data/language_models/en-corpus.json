@@ -1,0 +1,61 @@
+{
+    "name": "   Corpus",
+    "locale": "en-US",
+    "data": [
+        {
+            "intent": "health-tips.eye",
+            "utterances": [
+                "eye health tips",
+                "how to care for your eyes",
+                "vision care",
+                "eye health",
+                "healthy eyes",
+                "protecting your vision",
+                "eye care tips",
+                "tips for good eyesight"
+            ],
+            "answers": [
+                "Maintain a balanced diet rich in vitamin A and beta-carotene for healthy eyes.",
+                "Wear sunglasses with UV protection to shield your eyes from harmful sun rays.",
+                "Take regular breaks from screen time to reduce eye strain.",
+                "Get a comprehensive eye exam at least once a year."
+            ]
+        },
+        {
+            "intent": "health-tips.hair",
+            "utterances": [
+                "hair care tips",
+                "how to get shiny hair",
+                "healthy hair tips",
+                "natural hair care",
+                "hair care routine",
+                "tips for strong hair",
+                "beautiful hair secrets"
+            ],
+            "answers": [
+                "Keep your scalp clean and free from excessive oil.",
+                "Avoid using excessive heat styling tools on your hair.",
+                "Use a deep conditioning treatment once a week for added moisture.",
+                "Trim your hair regularly to prevent split ends."
+            ]
+        },
+        {
+            "intent": "health-tips.liver",
+            "utterances": [
+                "liver health tips",
+                "how to detoxify your liver",
+                "liver cleanse",
+                "healthy liver diet",
+                "protecting your liver",
+                "liver care tips",
+                "foods for liver health"
+            ],
+            "answers": [
+                "Limit alcohol consumption to protect your liver.",
+                "Eat foods rich in antioxidants like berries and leafy greens.",
+                "Stay hydrated by drinking plenty of water throughout the day.",
+                "Consider a liver detox diet under medical supervision if needed."
+            ]
+        }
+    ]
+}

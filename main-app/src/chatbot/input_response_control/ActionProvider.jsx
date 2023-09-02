@@ -25,6 +25,11 @@ class ActionProvider {
     this.setChatBotMessage(message);
   }
 
+  displayPromptResponse = () => {
+    const message = this.createChatBotMessage("Generating response. ", { widget: 'nlpResponse' });
+    this.setChatBotMessage(message);
+  }
+
   // method to add chatbot message to the state
   setChatBotMessage = (message) => {
     this.setStateFunc(state => ({ ...state, messages: [...state.messages, message] }))

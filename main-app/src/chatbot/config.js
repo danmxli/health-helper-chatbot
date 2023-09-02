@@ -2,6 +2,7 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 import DisplayUsers from '../components/widgets/DisplayUsers';
 import DisplayAboutMe from '../components/widgets/AboutMe';
 import DisplayConfig from '../components/widgets/DisplayConfig';
+import NlpResponse from '../components/widgets/NlpResponse';
 import MyAvatar from '../profiles/MyAvatar';
 
 const config = {
@@ -36,6 +37,11 @@ const config = {
             widgetName: "displayConfig",
             widgetFunc: (props) => <DisplayConfig {...props} />,
             mapStateToProps: ["displayConfig"]
+        },
+        {
+            widgetName: "nlpResponse",
+            widgetFunc: (props) => <NlpResponse {...props} />,
+            mapStateToProps: ["nlpResponse"]
         }
     ]
 };

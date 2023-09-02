@@ -24,3 +24,13 @@
     color: #79ef99;
     border-radius: 15px;
 }
+
+.config-box-item header {
+    text-align: center;
+    margin: 1px;
+    padding: 7px;
+    border: 3px solid #265295;
+    background-color: #131349;
+    color: #69cdff;
+    border-radius: 15px;
+}
