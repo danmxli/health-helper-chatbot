@@ -6,24 +6,37 @@ const NlpResponse = (props) => {
     const [answers, setAnswers] = useState([]);
 
     useEffect(() => {
+        var users = {};
 
-        fetch('http://localhost:3001/process-text?text=eyes', {
-            method: 'POST',
-        })
-            .then((res) => {
-                if (!res.ok) {
-                    throw new Error('HTTP request failed');
+        fetch('http://localhost:8080/config')
+            .then(response => response.json())
+            .then(documents => {
+                if (documents && documents.data) {
+                    users = documents.data;
+                    console.log(users)
                 }
-                return res.json();
+
+                users.forEach((item) => {
+                    fetch(`http://localhost:3001/process-text?text=${item.prompt}`, {
+                        method: 'POST',
+                    })
+                        .then((res) => {
+                            if (!res.ok) {
+                                throw new Error('HTTP request failed');
+                            }
+                            return res.json();
+                        })
+                        .then((data) => {
+                            const answer = item.name.toString() + ": " + data.answer.toString();
+                            setAnswers((prevAnswers) => [...prevAnswers, answer]);
+                        })
+                        .catch((error) => {
+                            console.error('Fetch error:', error);
+                            throw error;
+                        });
+                })
             })
-            .then((data) => {
-                const answer = data.answer.toString();
-                setAnswers((prevAnswers) => [...prevAnswers, answer]);
-            })
-            .catch((error) => {
-                console.error('Fetch error:', error);
-                throw error;
-            });
+
     }, [setState])
 
     const renderDefinition = () => {
