@@ -1,0 +1,27 @@
+.options {
+    padding-bottom: 10px;
+}
+
+.options-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.option-item {
+    padding: 8px 15px;
+    border: 3px solid #7a93a5;
+    border-radius: 25px;
+    background-color: #473d4d;
+    color: #c9e8ff;
+    font-size: 12px;
+    margin: 3px;
+    box-shadow: inset 0px 0px 0px #8622c4;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.option-item:hover {
+    box-shadow: inset 0px 0px 30px #422648;
+    background-color: #422648;
+    transform: scale(1.06);
+}

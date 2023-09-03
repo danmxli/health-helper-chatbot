@@ -5,8 +5,13 @@ class ActionProvider {
     this.setStateFunc = setStateFunc;
   }
 
+  promptNext = () => {
+    const message = this.createChatBotMessage("How can I help you?", { widget: 'navigation' });
+    this.setChatBotMessage(message)
+  }
+
   handleHello = () => {
-    const message = this.createChatBotMessage("Greetings! To get started, please ask a question.");
+    const message = this.createChatBotMessage("Greetings! To get started, please ask a question, or select the following:", { widget: 'navigation' });
     this.setChatBotMessage(message)
   }
 

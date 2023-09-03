@@ -14,20 +14,24 @@ class MessageParser {
       this.actionProvider.handleHello()
     }
 
-    if (lowercase.includes("user")) {
+    else if (lowercase.includes("user")) {
       this.actionProvider.displayExistingUsers()
     }
 
-    if (lowercase.includes("about")) {
+    else if (lowercase.includes("about")) {
       this.actionProvider.displayAboutMe()
     }
 
-    if (lowercase.includes("config")) {
+    else if (lowercase.includes("config")) {
       this.actionProvider.displayConfigData()
     }
 
-    if (lowercase.includes("tip")) {
+    else if (lowercase.includes("tip")) {
       this.actionProvider.displayPromptResponse()
+    }
+
+    else {
+      this.actionProvider.promptNext()
     }
   }
 }

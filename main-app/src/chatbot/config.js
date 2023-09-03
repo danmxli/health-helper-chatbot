@@ -3,10 +3,11 @@ import DisplayUsers from '../components/widgets/DisplayUsers';
 import DisplayAboutMe from '../components/widgets/AboutMe';
 import DisplayConfig from '../components/widgets/DisplayConfig';
 import NlpResponse from '../components/widgets/NlpResponse';
+import Navigation from '../components/widgets/Navigation';
 import MyAvatar from '../profiles/MyAvatar';
 
 const config = {
-    initialMessages: [createChatBotMessage(`Hello! How may I be of assistance today?`)],
+    initialMessages: [createChatBotMessage(`Hello! How may I be of assistance today?`, { widget: 'navigation' })],
     botName: 'Health Helper Chatbot',
     customComponents: {
         botAvatar: (props) => <MyAvatar {...props} />
@@ -42,6 +43,11 @@ const config = {
             widgetName: "nlpResponse",
             widgetFunc: (props) => <NlpResponse {...props} />,
             mapStateToProps: ["nlpResponse"]
+        },
+        {
+            widgetName: "navigation",
+            widgetFunc: (props) => <Navigation {...props} />,
+            mapStateToProps: ["navigation"]   
         }
     ]
 };
