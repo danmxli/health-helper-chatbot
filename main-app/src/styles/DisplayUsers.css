@@ -1,14 +1,29 @@
 .display-users-widget {
+    display: flex;
     color: black;
+    font-size: 12px;
+    margin: 1px;
+    padding: 5px;
+    border: 3px solid #463199;
+    border-radius: 15px;
+    background-color: #c8c3e3;
+    text-align: left;
 }
 
 .widget-list-item {
     display: flex;
     font-size: 11px;
     margin: 1px;
-    padding: 5px;
-    border: 3px solid #576B7E;
-    border-radius: 1px;
-    background-color: #F9F5EC;
+    padding: 8px;
+    border: 3px solid #076dcc;
+    border-radius: 15px;
+    background-color: #0c252e;
+    color: #9ddbd8;
     text-align: left;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.widget-list-item:hover {
+    background-color: #123729;
+    transform: scale(1.02);
 }

@@ -17,12 +17,18 @@
 
 .config-box-item li {
     text-align: left;
-    margin: 1px;
-    padding: 7px;
-    border: 3px solid #375a44;
+    margin: 5px;
+    padding: 6px;
+    border: 3px solid #215534;
     background-color: #1a3221;
     color: #79ef99;
     border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.config-box-item li:hover {
+    background-color: #262a48;
+    transform: scale(1.02);
 }
 
 .config-box-item header {

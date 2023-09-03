@@ -1,11 +1,27 @@
 .about-box-item {
-    display: inline-block;
-    color: black;
+    color: rgb(241, 176, 221);
     font-size: 12px;
-    margin: 1px;
-    padding: 5px;
-    border: 3px solid #8781a4;
+    margin: 2px;
+    padding: 15px;
+    border: 3px solid #971788;
     border-radius: 15px;
-    background-color: #FAF3FA;
+    background-color: #311235;
     text-align: left;
+}
+.about-box-item li {
+    list-style: none;
+    color: rgb(226, 211, 252);
+    font-size: 11px;
+    margin: 4px;
+    padding: 10px;
+    border: 3px solid #971788;
+    border-radius: 15px;
+    background-color: #362439;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-box-item li:hover {
+    background-color: #482644;
+    transform: scale(1.1);
 }
