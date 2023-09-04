@@ -10,12 +10,24 @@ const getAllConfigData = async () => {
     }
 }
 
-const addNewConfig = async () => {
-    return;
+const addNewConfig = async (newDoc) => {
+    try {
+        data = await userConfig.addDocument(newDoc);
+        return data;
+    }
+    catch (error) {
+        throw error;
+    }
 }
 
-const deleteConfig = async () => {
-    return;
+const deleteConfig = async (name) => {
+    try {
+        data = await userConfig.deleteDocument(name);
+        return data;
+    }
+    catch (error) {
+        throw error;
+    }
 }
 
 module.exports = {

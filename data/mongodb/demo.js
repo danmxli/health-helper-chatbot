@@ -14,8 +14,12 @@ async function run() {
         await client.connect();
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
+        // await createDoc(client, {
+        //     name: 'Joe',
+        //     prompt: 'eye'
+        // })
+        await deleteDoc(client, "edward")
         await getData(client);
-
     } finally {
         await client.close();
     }
@@ -43,6 +47,6 @@ async function createDoc(client, document) {
 }
 
 async function deleteDoc(client, filter) {
-    const result = await client.db("nlp_config").collection("suggestions").deleteOne(filter);
+    const result = await client.db("nlp_config").collection("suggestions").deleteOne({ name: filter });
     console.log(`deleted listing.`);
 }

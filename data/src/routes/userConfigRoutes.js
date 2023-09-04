@@ -7,7 +7,7 @@ router.get("/", userConfigController.getAllConfigData);
 
 router.post("/", userConfigController.addNewConfig);
 
-router.delete("/:id", userConfigController.deleteConfig);
+router.delete("/:name", userConfigController.deleteConfig);
 
 module.exports = router;
 

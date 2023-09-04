@@ -14,14 +14,37 @@ const getAllConfigData = async (req, res) => {
 
 }
 
-const addNewConfig = (req, res) => {
-    const newConfig = userConfigServices.addNewConfig();
-    res.send("Add new config");
+const addNewConfig = async (req, res) => {
+    const { body } = req;
+    try {
+        const newDoc = {
+            name: body.name,
+            prompt: body.prompt,
+        };
+        const newConfig = await userConfigServices.addNewConfig(newDoc);
+        res.send({
+            status: "OK",
+            data: newConfig
+        });
+    }
+    catch (error) {
+        throw error;
+    }
 }
 
 const deleteConfig = (req, res) => {
-    userConfigServices.deleteConfig();
-    res.send("Delete config");
+    const name = req.params.name;
+    try {
+        const updatedConfig = userConfigServices.deleteConfig(name);
+        res.send({
+            status: "OK",
+            data: updatedConfig
+        });
+    }
+    catch (error) {
+        throw error;
+    }
+
 }
 
 module.exports = {
