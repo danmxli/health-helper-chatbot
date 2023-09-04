@@ -4,7 +4,7 @@
     font-size: 12px;
     margin: 1px;
     padding: 5px;
-    border: 3px solid #375a44;
+    border: 3px solid #a7d4c4;
     border-radius: 15px;
     background-color: #e6f5ea;
     text-align: left;
@@ -18,16 +18,24 @@
 .config-box-item li {
     text-align: left;
     margin: 5px;
-    padding: 6px;
-    border: 3px solid #215534;
-    background-color: #1a3221;
-    color: #79ef99;
+    padding: 8px;
+    border: 3px solid #1ca14d;
+    background-color: #47604f;
+    color: #cee7db;
     border-radius: 15px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.config-box-item code {
+    background-color: #365533;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #f4ebeb;
+    white-space: pre-wrap;
+}
+
 .config-box-item li:hover {
-    background-color: #262a48;
+    background-color: #2b4e4d;
     transform: scale(1.02);
 }
 
@@ -35,8 +43,8 @@
     text-align: center;
     margin: 1px;
     padding: 7px;
-    border: 3px solid #265295;
-    background-color: #131349;
-    color: #69cdff;
+    border: 3px solid #6e737b;
+    background-color: #37374b;
+    color: #9ad6f5;
     border-radius: 15px;
 }

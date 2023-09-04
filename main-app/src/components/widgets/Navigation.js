@@ -21,6 +21,11 @@ const Navigation = (props) => {
             name: "Generate health tips",
             handler: props.actionProvider.displayPromptResponse,
             id: 4
+        },
+        {
+            name: "Ask for help",
+            handler: props.actionProvider.displayInstructions,
+            id: 5
         }
     ];
     return <Options options={options} {...props} />;

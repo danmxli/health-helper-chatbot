@@ -4,6 +4,7 @@ import DisplayAboutMe from '../components/widgets/AboutMe';
 import DisplayConfig from '../components/widgets/DisplayConfig';
 import NlpResponse from '../components/widgets/NlpResponse';
 import Navigation from '../components/widgets/Navigation';
+import Instructions from '../components/widgets/Instructions';
 import MyAvatar from '../profiles/MyAvatar';
 
 const config = {
@@ -47,7 +48,12 @@ const config = {
         {
             widgetName: "navigation",
             widgetFunc: (props) => <Navigation {...props} />,
-            mapStateToProps: ["navigation"]   
+            mapStateToProps: ["navigation"]
+        },
+        {
+            widgetName: "instructions",
+            widgetFunc: (props) => <Instructions {...props} />,
+            mapStateToProps: ["instructions"]
         }
     ]
 };

@@ -27,7 +27,8 @@ const DisplayConfig = (props) => {
                 <ul>
                     {displayConfig.map((item) => (
                         <li key={item._id}>
-                            name: {item.name}, prompt: {item.prompt}
+                            <code>name: {item.name}</code><br />
+                            <code>prompt: {item.prompt}</code>
                         </li>
                     ))}
                 </ul>

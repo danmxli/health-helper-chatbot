@@ -29,7 +29,9 @@ class MessageParser {
     else if (lowercase.includes("tip")) {
       this.actionProvider.displayPromptResponse()
     }
-
+    else if (lowercase.includes("help")) {
+      this.actionProvider.displayInstructions()
+    }
     else {
       this.actionProvider.promptNext()
     }

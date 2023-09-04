@@ -8,6 +8,7 @@
     background-color: #311235;
     text-align: left;
 }
+
 .about-box-item li {
     list-style: none;
     color: rgb(226, 211, 252);
@@ -23,5 +24,47 @@
 
 .about-box-item li:hover {
     background-color: #482644;
+    transform: scale(1.1);
+}
+
+.instructions-box-item {
+    color: rgb(195, 211, 250);
+    font-size: 12px;
+    margin: 2px;
+    padding: 15px;
+    border: 3px solid #135caf;
+    border-radius: 15px;
+    background-color: #363355;
+    text-align: left;
+}
+
+.instructions-box-item h4 {
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.instructions-box-item li {
+    list-style: none;
+    color: rgb(176, 201, 186);
+    font-size: 11px;
+    margin: 4px;
+    padding: 10px;
+    border: 3px solid #179775;
+    border-radius: 15px;
+    background-color: #233838;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.instructions-box-item code {
+    background-color: #365533;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #f4ebeb;
+    white-space: pre-wrap;
+}
+
+.instructions-box-item li:hover {
+    background-color: #264845;
     transform: scale(1.1);
 }
